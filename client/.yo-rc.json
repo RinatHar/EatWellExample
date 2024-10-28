@@ -1,0 +1,23 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "baseName": "react-native",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-react-native",
+        "version": "5.0.0"
+      }
+    ],
+    "enableTranslation": true,
+    "entities": ["Product", "DailyRation", "UserProperties"],
+    "jhipsterVersion": "8.7.1",
+    "lastLiquibaseTimestamp": 1730127291000,
+    "prettierDefaultIndent": 2,
+    "projectName": "Eat WellReactNative"
+  },
+  "generator-jhipster-react-native": {
+    "appDir": "..\\generator-jhipster-react-native",
+    "detox": true,
+    "reactNativeDir": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "eatWellApp": {
+    "dailyRation": {
+      "home": {
+        "title": "Daily Rations",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Daily Ration",
+        "createOrEditLabel": "Создать или отредактировать Daily Ration",
+        "notFound": "Daily Rations не найдено"
+      },
+      "created": "Новый Daily Ration создан с идентификатором {{ param }}",
+      "updated": "Daily Ration обновлен с идентификатором {{ param }}",
+      "deleted": "Daily Ration удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Daily Ration {{ id }}?"
+      },
+      "detail": {
+        "title": "Daily Ration"
+      },
+      "id": "ID",
+      "productWeight": "Product Weight",
+      "createdDate": "Created Date",
+      "lastModifiedDate": "Last Modified Date",
+      "user": "User",
+      "product": "Product"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+application {
+  config {
+    applicationType monolith,
+    baseName EatWell,
+    packageName com.makrin.eatwell,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    buildTool maven,
+    testFrameworks [protractor],
+    clientFramework react,
+    enableTranslation true,
+    nativeLanguage en,
+    languages [en, ru]
+  }
+  entities Product, DailyRation, UserProperties
+}
+
+entity UserProperties {
+  name String required,
+  gender Gender required,
+  date LocalDate required,
+  currentWeight Double required,
+  preferredWeight Double required,
+  height Double required,
+  lifestyle Lifestyle required,
+  caloriesNeeded Double required,
+  createdDate ZonedDateTime required,
+  lastModifiedDate ZonedDateTime required
+}
+
+entity Product {
+  name String required,
+  photo String,
+  calories Double required,
+  protein Double required,
+  fats Double required,
+  carbohydrates Double required,
+  createdDate ZonedDateTime required,
+  lastModifiedDate ZonedDateTime required
+}
+
+entity DailyRation {
+  productWeight Double required,
+  createdDate ZonedDateTime required,
+  lastModifiedDate ZonedDateTime required
+}
+
+enum Lifestyle {
+  SEDENTARY,
+  LIGHTLY_ACTIVE,
+  MODERATELY_ACTIVE,
+  VERY_ACTIVE,
+  EXTREMELY_ACTIVE
+}
+
+enum Gender {
+  MALE,
+  FEMALE,
+  NON_BINARY
+}
+
+relationship OneToOne {
+  UserProperties{user(id)} to User with builtInEntity
+}
+
+relationship ManyToOne {
+  DailyRation{user(id)} to User with builtInEntity,
+  DailyRation{product(id)} to Product,
+  Product{user(id)} to User with builtInEntity
+}
+
+paginate Product with infinite-scroll
+paginate DailyRation with pagination

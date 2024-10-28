@@ -1,0 +1,20 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "EatWell",
+    "buildTool": "maven",
+    "clientFramework": "react",
+    "devServerPort": 9060,
+    "enableTranslation": true,
+    "entities": ["Product", "DailyRation", "UserProperties"],
+    "jhipsterVersion": "8.7.1",
+    "jwtSecretKey": "OGNlM2NkYTkwMGE4NTJlMmQzNmRlNThhNjc3MjNiMzI5NmQ3YzFjMmRhNDM0ZGY0NGU3NzYyOWM3Yzg4MGRjMjI3OTRlZDAwZjI1ZmI3ZDkxMGQwZTI2MTBjZmJiOGVhZjBjMGQzM2IxMjUxNjE0MjA0YTkwOTcxZmJkY2U0Yjk=",
+    "languages": ["en", "ru"],
+    "lastLiquibaseTimestamp": 1730120775000,
+    "nativeLanguage": "en",
+    "packageName": "com.makrin.eatwell",
+    "prodDatabaseType": "postgresql",
+    "testFrameworks": ["protractor"]
+  }
+}

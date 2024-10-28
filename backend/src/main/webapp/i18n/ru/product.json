@@ -1,0 +1,32 @@
+{
+  "eatWellApp": {
+    "product": {
+      "home": {
+        "title": "Products",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Product",
+        "createOrEditLabel": "Создать или отредактировать Product",
+        "notFound": "Products не найдено"
+      },
+      "created": "Новый Product создан с идентификатором {{ param }}",
+      "updated": "Product обновлен с идентификатором {{ param }}",
+      "deleted": "Product удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Product {{ id }}?"
+      },
+      "detail": {
+        "title": "Product"
+      },
+      "id": "ID",
+      "name": "Name",
+      "photo": "Photo",
+      "calories": "Calories",
+      "protein": "Protein",
+      "fats": "Fats",
+      "carbohydrates": "Carbohydrates",
+      "createdDate": "Created Date",
+      "lastModifiedDate": "Last Modified Date",
+      "user": "User"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "eatWellApp": {
+    "userProperties": {
+      "home": {
+        "title": "User Properties",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый User Properties",
+        "createOrEditLabel": "Создать или отредактировать User Properties",
+        "notFound": "User Properties не найдено"
+      },
+      "created": "Новый User Properties создан с идентификатором {{ param }}",
+      "updated": "User Properties обновлен с идентификатором {{ param }}",
+      "deleted": "User Properties удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить User Properties {{ id }}?"
+      },
+      "detail": {
+        "title": "User Properties"
+      },
+      "id": "ID",
+      "name": "Name",
+      "gender": "Gender",
+      "date": "Date",
+      "currentWeight": "Current Weight",
+      "preferredWeight": "Preferred Weight",
+      "height": "Height",
+      "lifestyle": "Lifestyle",
+      "caloriesNeeded": "Calories Needed",
+      "createdDate": "Created Date",
+      "lastModifiedDate": "Last Modified Date",
+      "user": "User"
+    }
+  }
+}
